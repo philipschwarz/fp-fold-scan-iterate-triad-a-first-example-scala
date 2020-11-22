@@ -29,6 +29,7 @@ def `convert⚡`(n: Int): Seq[(Int,Int)] =
   intToDigits(n).scanLeft((0,0))(next)
 
 @main def main =
+  assert((123 ⊕ 4) == 1234)
   assert(intToDigits(12345) == List(1,2,3,4,5))
   assert(digitsToInt(List(1,2,3,4,5)) == 12345 )
   assert(digitsToSum(List(1,2,3,4,5)) == 15 )
